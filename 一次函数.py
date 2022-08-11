@@ -37,7 +37,7 @@ pygame.display.set_caption('一次函数')
 class InputBOX:
     def __init__(self, in_x, in_y, w, h, font_size):
         self.rect = pygame.Rect(in_x, in_y, w, h)
-        self.font = pygame.font.Font('E:\字体\AaKaiSong（JianFan）-2.ttf', font_size)
+        self.font = pygame.font.Font('./AaKaiSong（JianFan）-2.ttf', font_size)
         self.list = []
         self.count = 0
         self.delete = False
@@ -166,7 +166,7 @@ class InputBOX:
 # 文字显示类
 class Text:
     def __init__(self, msg, m_x, m_y, font_size, bg_color):
-        self.font = pygame.font.Font('E:\字体\AaKaiSong（JianFan）-2.ttf', font_size)
+        self.font = pygame.font.Font('./AaKaiSong（JianFan）-2.ttf', font_size)
         self.x = m_x
         self.y = m_y
         self.msg = msg
